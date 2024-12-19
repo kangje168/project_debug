@@ -19,7 +19,7 @@ def generate_combined_txt_from_project(output_txt_file):
                     file_extension = os.path.splitext(file)[1].lower()
 
                     # 仅处理代码文件
-                    if file_extension in ['.py', '.java', '.php', '.xml', '.json', '.c', '.h']:
+                    if file_extension in ['.py', '.js', '.java', '.php', '.xml', '.json', '.c', '.h']:
                         try:
                             out_f.write(f"{indent}- {file}\n")
                             with open(file_path, 'r', encoding='utf-8') as f:
